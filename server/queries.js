@@ -1,7 +1,8 @@
 const Pool = require('pg').Pool;
 require('dotenv').config();
 
-const connectionString = `Database=${process.env.POSTGRES_DB};Server=${process.env.POSTGRES_SERVER};User Id=${process.env.POSTGRES_USERNAME};Password=${process.env.POSTGRES_PASSWORD};Port=5432`;
+const connectionString = "Server=test-postgresql-publicconnection.postgres.database.azure.com;Database=postgres;Port=5432;User Id=evatheodoridou;Password=skgf$#%usry872456;Ssl Mode=Require;"
+//const connectionString = `Database=${process.env.POSTGRES_DB};Server=${process.env.POSTGRES_SERVER};User Id=${process.env.POSTGRES_USERNAME};Password=${process.env.POSTGRES_PASSWORD};Port=5432`;
 console.log(connectionString);
 const pool = new Pool({
   connectionString
